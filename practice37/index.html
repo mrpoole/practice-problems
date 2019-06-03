@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>37</title>
+
+    <script>
+        var string = 'amazing';
+
+        function everyOther(string) {
+            var newString = ""
+            for (var i = 0; i < string.length; i++) {
+                if (i % 2 === 1) {
+                    newString += string.charAt(i).toUpperCase()
+                } else {
+                    newString += string.charAt(i)
+                }
+            }
+            return newString
+        }
+
+        console.log(everyOther(string));
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

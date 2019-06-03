@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>36</title>
+    <script>
+        //find the vowels
+        var string = "four score and seven years ago";
+
+        function removeVowels(input) {
+            var vowels = input.replace(/[b-df-hj-np-tv-z]/g, "");
+            return vowels;
+        }
+        var stringOfVowels = removeVowels(string);
+
+        function removeSpace(input) {
+            var withoutSpaces = input.replace(/\s/g, '');
+            return withoutSpaces
+        }
+
+        var noSpaces = removeSpace(stringOfVowels);
+        console.log(noSpaces);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
